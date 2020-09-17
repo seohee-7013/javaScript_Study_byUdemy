@@ -30,7 +30,7 @@ whether Mark has a higher BMI than John
 4. print a string to the console containing the variable from step 3. 
 ( Something like "Is Mike's BMI highter than John's? true ") */
 
-
+/*
 var MMass= 100; //kg
 var JMass= 80;
 
@@ -117,6 +117,8 @@ Mike score=116,94,123
   compare with john and mike (using &&)
 */
 
+
+/*
 var Javg=(89+120+103)/3;
 var Mavg=(116+94+123)/3;
 var MaryAvg=(97+134+105)/3;
@@ -139,6 +141,8 @@ else {
 
 /* Fuctions */
 
+
+/*
 function calculatAge(birthYear){
     return 2020 - birthYear;
 }
@@ -168,6 +172,8 @@ console.log(whatDoyouDo('driver', 'ef'));
 
 /* Array******* */
 
+
+/*
 var names = ['Seohee', 'John', 'Mark'];
 var years= new Array(1996,1990,1969);
 
@@ -196,6 +202,9 @@ console.log(john);
 
 console.log(john.indexOf(23));//없으면 -1
 
+
+
+
 /********Coding Challenge3 */
 //지불 금액에 따른 팁계산기
 function tipCalcuator(bill){
@@ -217,4 +226,45 @@ tipCalcuator(bills[1]),
 tipCalcuator(bills[2])];
 console.log(tips);
 
+/**Object and properties */
+var john ={
+    firstName: 'john',
+    lastName: 'Smith',
+    birthYear: 1996,
+    family:['jane','Mark','Bob','Emily'],
+    job: 'teacher'
+}
 
+console.log(john);
+console.log(john.birthYear); //.키로 값찾기
+
+var jane= new Object();//새로운 빈 객체 생성
+
+//object and method 객체와 메소드
+
+var john ={
+    firstName: 'john',
+    lastName: 'Smith',
+    birthYear: 1996,
+    family:['jane','Mark','Bob','Emily'],
+    job: 'teacher',
+    calcAge: function(birthYear){//john객체의 메소드
+        return 2020-birthYear;
+    }
+
+};  console.log(john.calcAge(1996));
+     //john객체의 carlAge메소드사용하겠다. 
+
+/*****Coding Challenge */
+var john ={
+    firstName: 'john',
+    lastName: 'Smith',
+    mass: 92,
+    height:1.95,
+    calcBMI: function(){
+        this.bmi = this.mass / (this.height *this.height);
+        return this.bmi; //this에 bmi로 결과값 저장되도록
+    }
+}   
+john.calcBMI();  //john객체의 calcBMI메소드
+console.log(john); //john객체에 bmi속성 추가 되어있슴.
