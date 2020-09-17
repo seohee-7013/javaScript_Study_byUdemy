@@ -62,3 +62,42 @@ if(MBMI > JBMI){
     console.log('Mark\' BMI is highter than John\'s.');
 
 }else{console.log('John\' BMI is highter than Mark\'s.');}
+
+
+
+//Switch Statements
+var jop='teacher';
+switch(jop){
+    case 'teacher':
+        console.log(firstName+ ' teaches kids how to code');
+        break;
+    case 'driver':
+        console.log(firstName+ ' drives');
+        break;
+    case 'designer':
+        console.log(firstName+ ' designs websites');
+        break;
+    default:
+        console.log(firstName + ' something');
+                      
+}
+
+switch(true){
+    case age<13:
+        console.log(firstName+' is a girl');
+        break;
+    case age_=13 && age < 20:
+        console.log(firstName+' is a teenager');
+        break;
+    default:
+        console.log(firstName+ ' is a woman.');
+
+
+}
+
+//Equality operators 
+if(height =='23'){//강제 형변환 후 검사
+    console.log('The == operator does type coercion!');
+ //'==' 는 강제 형변환 후 비교 
+}
+
