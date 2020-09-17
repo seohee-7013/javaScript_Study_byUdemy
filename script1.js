@@ -81,12 +81,12 @@ switch(jop){
         console.log(firstName + ' something');
                       
 }
-
+var age=15;
 switch(true){
     case age<13:
         console.log(firstName+' is a girl');
         break;
-    case age_=13 && age < 20:
+    case age=13 && age < 20:
         console.log(firstName+' is a teenager');
         break;
     default:
@@ -94,10 +94,45 @@ switch(true){
 
 
 }
-
+var height=23;
 //Equality operators 
 if(height =='23'){//강제 형변환 후 검사
     console.log('The == operator does type coercion!');
  //'==' 는 강제 형변환 후 비교 
+}
+
+
+
+
+/* CODING CHALLENGE
+   
+John score=89,120,103
+Mike score=116,94,123
+
+1.average
+2.compare average , print winner to the console
+  (include average score)
+3.else if draw or different winners
+4.Mary score=97,134,105
+  compare with john and mike (using &&)
+*/
+
+var Javg=(89+120+103)/3;
+var Mavg=(116+94+123)/3;
+var MaryAvg=(97+134+105)/3;
+
+console.log(Javg,Mavg,MaryAvg)
+
+if(Javg > Mavg && Javg> MaryAvg){
+    console.log('john\s team wins with' + Javg+' points');
+} else if(Mavg>Javg && Mavg > MaryAvg){
+    console.log('Mike\'s team wins with ' + Mavg + ' points');
+
+}else if(MaryAvg>Javg && MaryAvg > Mavg){
+    console.log('Mary\'s team wins with ' + Mavg + ' points');
+
+}
+else {
+    console.log('Ther is a draw');
 }
 
