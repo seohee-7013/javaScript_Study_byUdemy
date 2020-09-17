@@ -196,5 +196,25 @@ console.log(john);
 
 console.log(john.indexOf(23));//없으면 -1
 
+/********Coding Challenge3 */
+//지불 금액에 따른 팁계산기
+function tipCalcuator(bill){
+  var percentage;
+  if(bill < 50){
+    percentage =.2;
+
+  }else if (bill >= 50 && bill <200) {
+    percentage = .15;
+  } else{
+    percentage=.1;
+  }
+  return percentage * bill;
+  
+}
+var bills = [124,48,268];
+var tips = [tipCalcuator(bills[0]),
+tipCalcuator(bills[1]),
+tipCalcuator(bills[2])];
+console.log(tips);
 
 
