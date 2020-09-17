@@ -136,3 +136,65 @@ else {
     console.log('Ther is a draw');
 }
 
+
+/* Fuctions */
+
+function calculatAge(birthYear){
+    return 2020 - birthYear;
+}
+
+var ageSeohee= calculatAge(1996);
+console.log(ageSeohee);
+
+//Fuction expression
+
+var whatDoyouDo= function(job,firstName){
+    switch(job){
+        case 'teacher':
+            return firstName + ' teaches kids'
+        case 'driver':
+            return firstName + ' drives a cab'
+        case 'designer':
+            return firstName + ' designs websites'
+        default:
+            return firstName + ' does something'
+    }
+}
+
+console.log(whatDoyouDo('teacher', 'sh'));
+console.log(whatDoyouDo('designer', 'as'));
+console.log(whatDoyouDo('driver', 'ef'));
+
+
+/* Array******* */
+
+var names = ['Seohee', 'John', 'Mark'];
+var years= new Array(1996,1990,1969);
+
+console.log(names[2]);
+console.log(names.length);
+
+
+
+// Mutate array data 데이터변경
+names[1]= 'Ben';
+names[names.length]='Mary';
+console.log(names);
+
+//different data types
+var john = ['john','smith',1990, 'teacher',false];
+
+john.push('blue'); //마지막배열에 add
+john.unshift('Mr.') //첫 배열에 add
+console.log(john);
+
+john.pop();//마지막 인덱스 제거
+john.pop();
+john.shift();//첫 인덱스 제거
+john.indexOf(1990);//인덱스 번호
+console.log(john);
+
+console.log(john.indexOf(23));//없으면 -1
+
+
+
